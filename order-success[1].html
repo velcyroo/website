@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b0b0b">
+  <title>Order Confirmed — VELCYRO</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .success-page{min-height:100vh;background:#0b0b0b;color:#fff;display:flex;align-items:center;justify-content:center;padding:40px}
+    .success-card{width:min(760px,100%);border:1px solid #333;padding:clamp(30px,7vw,80px);position:relative}
+    .success-index{position:absolute;right:28px;top:28px;font-size:8px;letter-spacing:.2em;color:#777}
+    .success-card .kicker{color:#999}
+    .success-card h1{font:600 clamp(55px,9vw,120px)/.8 "Space Grotesk";letter-spacing:-.09em;margin:25px 0}
+    .success-card h1 em{font-style:normal;color:#888}
+    .success-card p{max-width:520px;color:#aaa;font-size:13px;line-height:1.8}
+    .order-number{margin:30px 0;padding:18px 0;border-top:1px solid #333;border-bottom:1px solid #333;font-size:10px;letter-spacing:.15em}
+    .success-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:30px}
+  </style>
+</head>
+<body>
+  <main class="success-page">
+    <section class="success-card">
+      <span class="success-index">VELCYRO / 2026</span>
+      <p class="kicker">ORDER RECEIVED</p>
+      <h1>You're<br><em>in.</em></h1>
+      <p>
+        Your demo order has been created successfully. No payment has been charged.
+        Once VELCYRO is connected to a real payment gateway and backend, this page will
+        become the live order-confirmation flow.
+      </p>
+      <div class="order-number">ORDER <strong id="orderId">—</strong></div>
+      <div class="success-actions">
+        <a class="button button-white" href="index.html">RETURN HOME →</a>
+        <a class="button" style="background:#222;color:#fff" href="index.html#shop">SHOP THE DROP →</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="products.js"></script>
+  <script src="cart.js"></script>
+  <script>
+    (() => {
+      const raw = sessionStorage.getItem("velcyro_demo_order");
+      if (!raw) {
+        location.href = "index.html";
+        return;
+      }
+      const order = JSON.parse(raw);
+      document.querySelector("#orderId").textContent = order.id;
+      VELCYRO_CART.clear();
+      sessionStorage.removeItem("velcyro_demo_order");
+    })();
+  </script>
+</body>
+</html>
