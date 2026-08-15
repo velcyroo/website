@@ -1,0 +1,17 @@
+{
+  "name": "VELCYRO",
+  "short_name": "VELCYRO",
+  "description": "VELCYRO — contemporary clothing built around original ideas.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f2f1ec",
+  "theme_color": "#0b0b0b",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
