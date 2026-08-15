@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b0b0b">
+<title>Contact — VELCYRO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"><style>
+:root{--ink:#0b0b0b;--paper:#f2f1ec;--line:#d4d3cd;--muted:#777}
+.info-page{background:var(--paper);min-height:100vh;padding:60px 6vw 110px}
+.info-wrap{max-width:1120px;margin:0 auto}
+.info-kicker{font-size:9px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:var(--muted)}
+.info-title{font:600 clamp(56px,10vw,150px)/.82 "Space Grotesk";letter-spacing:-.09em;margin:22px 0 70px}
+.info-grid{display:grid;grid-template-columns:260px 1fr;gap:7vw;border-top:1px solid var(--line)}
+.info-nav{padding-top:25px}
+.info-nav a{display:block;color:#777;text-decoration:none;font-size:9px;letter-spacing:.14em;text-transform:uppercase;padding:9px 0}
+.info-nav a.active,.info-nav a:hover{color:#111}
+.info-content{padding-top:25px;max-width:760px}
+.info-content h2{font:600 30px/1 "Space Grotesk";letter-spacing:-.05em;margin:42px 0 16px}
+.info-content h2:first-child{margin-top:0}
+.info-content p,.info-content li{font:400 13px/1.9 "DM Sans",sans-serif;color:#555}
+.info-content ul{padding-left:20px}
+.info-note{border:1px solid var(--line);padding:20px;margin:28px 0;font-size:11px;line-height:1.7;color:#666}
+.info-table{width:100%;border-collapse:collapse;margin:20px 0 35px;font-size:11px}
+.info-table th,.info-table td{text-align:left;border-bottom:1px solid var(--line);padding:13px 8px}
+.info-table th{font-size:8px;letter-spacing:.12em;text-transform:uppercase}
+.contact-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:35px}
+.contact-card{background:#fff;border:1px solid var(--line);padding:28px}
+.contact-card span{font-size:8px;letter-spacing:.15em;text-transform:uppercase;color:#888}
+.contact-card h3{font:600 24px "Space Grotesk";margin:15px 0 8px}
+.contact-card p{margin:0}
+@media(max-width:800px){.info-page{padding:40px 5vw 80px}.info-grid{grid-template-columns:1fr;gap:0}.info-nav{display:flex;gap:18px;overflow:auto;border-bottom:1px solid var(--line);padding:12px 0}.info-nav a{white-space:nowrap}.contact-cards{grid-template-columns:1fr}}
+</style>
+</head><body><header class="site-header">
+<a class="brand" href="index.html">VELCYRO<span>®</span></a>
+<nav class="desktop-nav"><a href="index.html#shop">Shop</a><a href="index.html#collections">Collections</a><a href="about.html">About</a></nav>
+<div class="header-tools"><a class="tool" href="checkout.html">Bag <b data-cart-count>0</b></a></div>
+</header>
+<main class="info-page"><div class="info-wrap">
+<p class="info-kicker">VELCYRO / CONNECT</p><h1 class="info-title">Talk to VELCYRO.</h1>
+<div class="info-grid"><aside class="info-nav">
+<a href="about.html">About</a>
+<a href="shipping.html">Shipping</a>
+<a href="returns.html">Returns</a>
+<a href="faq.html">FAQ</a>
+<a href="contact.html">Contact</a>
+</aside><article class="info-content">
+<p>For launch, this page will become the central customer-support contact point. The official support details can be inserted without changing the rest of the storefront.</p>
+<div class="contact-cards">
+<div class="contact-card"><span>Customer Support</span><h3>Coming soon.</h3><p>The official support email will be added before launch.</p></div>
+<div class="contact-card"><span>Instagram</span><h3>@velcyroo</h3><p>Official social presence. Replace this link with the final account URL if needed.</p></div>
+</div>
+<h2>For future orders</h2>
+<p>When live commerce is enabled, include the order number in support messages so the team can locate the order quickly.</p>
+<h2>Response times</h2>
+<p>Final support hours and response-time commitments will be published when customer support is operational.</p>
+</article></div>
+</div></main>
+<script src="products.js"></script><script src="cart.js"></script>
+<script>if(window.VELCYRO_CART) VELCYRO_CART.bindCount();</script>
+</body></html>
