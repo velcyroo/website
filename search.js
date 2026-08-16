@@ -1,0 +1,1 @@
+window.VELCYRO_SEARCH={search(q){q=String(q||"").trim().toLowerCase();const p=window.VELCYRO_PRODUCTS||[];return q?p.filter(x=>[x.name,x.category,x.collection,x.color,x.description].join(" ").toLowerCase().includes(q)):p}};

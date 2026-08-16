@@ -1,0 +1,1 @@
+.mobile-menu-button{display:none;padding:9px 12px;border:1px solid #bbb;background:transparent;font-size:8px}@media(max-width:900px){.mobile-menu-button{display:block}.desktop-nav.mobile-open{display:flex;position:absolute;top:70px;left:0;right:0;background:#f2f1ec;padding:20px 6vw;flex-direction:column;border-bottom:1px solid #ccc}}

@@ -1,0 +1,1 @@
+window.VELCYRO_CHECKOUT_VALIDATE={validate(d){let e={};if(!d.name?.trim())e.name="Name required";if(!/^\S+@\S+\.\S+$/.test(d.email||""))e.email="Valid email required";if(!d.address?.trim())e.address="Address required";if(!/^\d{6}$/.test(String(d.pincode||"")))e.pincode="6-digit pincode required";return{valid:!Object.keys(e).length,errors:e}}};

@@ -1,0 +1,1 @@
+const o=document.querySelector("#orders"),a=window.VELCYRO_ORDERS?.get?.()||[];o.innerHTML=a.length?a.map(x=>`<article style="background:#fff;border:1px solid #ccc;padding:20px;margin:10px 0"><b>${x.id}</b><p>₹${x.total} · ${x.items?.length||0} item(s)</p><small>${new Date(x.createdAt).toLocaleString("en-IN")}</small></article>`).join(""):"<p>No demo orders yet.</p>";

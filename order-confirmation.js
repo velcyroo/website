@@ -1,7 +1,1 @@
-/* VELCYRO — stores demo orders locally for the demo account page */
-window.VELCYRO_SAVE_DEMO_ORDER = function(order){
-  const key="velcyro_demo_orders";
-  const orders=JSON.parse(localStorage.getItem(key)||"[]");
-  orders.unshift(order);
-  localStorage.setItem(key,JSON.stringify(orders.slice(0,20)));
-};
+window.VELCYRO_SAVE_DEMO_ORDER=o=>{let a=JSON.parse(localStorage.getItem("velcyro_orders")||"[]");a.unshift(o);localStorage.setItem("velcyro_orders",JSON.stringify(a.slice(0,50)))};window.VELCYRO_ORDERS={get:()=>JSON.parse(localStorage.getItem("velcyro_orders")||"[]"),clear:()=>localStorage.removeItem("velcyro_orders")};

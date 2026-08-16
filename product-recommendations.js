@@ -1,0 +1,1 @@
+window.VELCYRO_RECOMMENDATIONS={for(p,limit=4){let a=(window.VELCYRO_PRODUCTS||[]).filter(x=>String(x.id)!==String(p?.id)),same=a.filter(x=>x.collection&&x.collection===p?.collection);return [...same,...a.filter(x=>!same.includes(x))].slice(0,limit)}};

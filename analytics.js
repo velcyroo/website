@@ -1,11 +1,1 @@
-/* VELCYRO — analytics event layer
-   Safe in demo mode: records events locally only.
-   Connect a real analytics provider later. */
-window.VELCYRO_ANALYTICS={
-  track(event,data={}){
-    const key="velcyro_demo_analytics";
-    const list=JSON.parse(localStorage.getItem(key)||"[]");
-    list.push({event,data,time:new Date().toISOString()});
-    localStorage.setItem(key,JSON.stringify(list.slice(-200)));
-  }
-};
+window.VELCYRO_ANALYTICS={track(event,data={}){let a=JSON.parse(sessionStorage.getItem("velcyro_events")||"[]");a.push({event,data,time:new Date().toISOString()});sessionStorage.setItem("velcyro_events",JSON.stringify(a.slice(-100)))}};

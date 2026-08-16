@@ -1,0 +1,1 @@
+window.VELCYRO_EMPTY=(target,title="Nothing here.",message="")=>{const e=typeof target==="string"?document.querySelector(target):target;if(e)e.innerHTML=`<div class="velcyro-empty"><h2>${title}</h2><p>${message}</p><a href="catalog.html">CONTINUE SHOPPING →</a></div>`};

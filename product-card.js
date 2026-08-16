@@ -1,0 +1,1 @@
+window.VELCYRO_PRODUCT_CARD=p=>`<article class="velcyro-product-card"><a href="product.html?id=${p.id}"><img src="${p.images?.[0]||""}" alt="${p.name}" loading="lazy"></a><div class="vpc-info"><a href="product.html?id=${p.id}">${p.name}</a><span>₹${p.price}</span></div></article>`;

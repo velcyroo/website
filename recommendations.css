@@ -1,0 +1,1 @@
+.recommendation-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.recommendation-grid img{width:100%;aspect-ratio:3/4;object-fit:cover}.recommendation-card{background:#fff;border:1px solid #ccc}@media(max-width:800px){.recommendation-grid{grid-template-columns:repeat(2,1fr)}}

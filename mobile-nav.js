@@ -1,0 +1,1 @@
+(()=>{const h=document.querySelector(".site-header"),n=h?.querySelector(".desktop-nav");if(!h||!n)return;const b=document.createElement("button");b.className="mobile-menu-button";b.textContent="MENU";h.insertBefore(b,n);b.onclick=()=>n.classList.toggle("mobile-open")})();

@@ -1,0 +1,1 @@
+window.VELCYRO_LAZY_IMAGES=()=>{document.querySelectorAll("img[data-src]").forEach(i=>{i.src=i.dataset.src;i.removeAttribute("data-src")})};document.addEventListener("DOMContentLoaded",()=>VELCYRO_LAZY_IMAGES());

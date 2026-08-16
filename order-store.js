@@ -1,0 +1,1 @@
+window.VELCYRO_ORDER_STORE={save(o){let a=JSON.parse(localStorage.getItem("velcyro_orders")||"[]");a.unshift(o);localStorage.setItem("velcyro_orders",JSON.stringify(a.slice(0,50)))},all(){return JSON.parse(localStorage.getItem("velcyro_orders")||"[]")},clear(){localStorage.removeItem("velcyro_orders")}};

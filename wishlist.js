@@ -1,0 +1,1 @@
+(()=>{const K="velcyro_wishlist",r=()=>JSON.parse(localStorage.getItem(K)||"[]"),s=x=>localStorage.setItem(K,JSON.stringify(x.map(Number)));window.VELCYRO_WISHLIST={get:r,has:id=>r().includes(Number(id)),toggle(id){id=Number(id);let x=r();x=x.includes(id)?x.filter(v=>v!==id):[...x,id];s(x);return x.includes(id)},clear:()=>s([]),count:()=>r().length}})();
